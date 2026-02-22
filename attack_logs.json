@@ -1,0 +1,14 @@
+[
+    {
+        "id": "92342ca2-1886-407f-aa1d-b9976928fe5f",
+        "timestamp": "2026-02-22T10:40:13.908657",
+        "event_type": "security_alert",
+        "attack_type": "Database Destruction Attempt",
+        "severity": "critical",
+        "source": {
+            "ip": "10.0.0.5"
+        },
+        "status": "blocked",
+        "lab": "cyber-attack-simulation"
+    }
+]

@@ -1,0 +1,8 @@
+version: '3.8'
+
+services:
+  attack-lab:
+    build: ./app
+    container_name: attack_simulation_lab
+    ports:
+      - "5000:5000"
