@@ -25,6 +25,7 @@ Orquestrar respostas automatizadas
 
 Demonstrar conceitos de SOC e SOAR
 
+
 🧠 Arquitetura do Sistema
 
 O laboratório é composto por três camadas principais:
@@ -41,6 +42,7 @@ Enviar dados para análise por IA
 
 Retornar relatórios estilo analista SOC
 
+
 🔄 Motor de Automação (n8n)
 
 Pipeline automatizado responsável por:
@@ -52,6 +54,7 @@ Processar dados do incidente
 Integrar com a API de análise
 
 Gerar respostas automatizadas
+
 
 🤖 Inteligência Artificial (Gemini)
 
@@ -65,6 +68,7 @@ Recomendações de mitigação
 
 Sugestões de melhoria de detecção
 
+
 🧩 Fluxo do Sistema
 
 Um ataque é simulado via API
@@ -77,6 +81,7 @@ A IA analisa o incidente
 
 O sistema retorna recomendações de resposta
 
+
 🟢 Status da API
 
 Endpoint raiz utilizado como verificação de funcionamento (health check):
@@ -88,16 +93,19 @@ Exemplo de resposta:
   "status": "running",
   "version": "2.0 SOC Edition"
 }
+
 🧪 Demonstração do Workflow
 🧠 Pipeline Automatizado (n8n)
 
 ⚡ Teste da API — Simulação de Ataque
+
 
 🧨 Técnicas MITRE ATT&CK Simuladas
 Ataque	Técnica	Descrição	Severidade
 Phishing	T1566	Phishing	High
 Ransomware	T1486	Data Encrypted for Impact	Critical
 Brute Force	T1110	Brute Force	Medium
+
 🛠️ Tecnologias Utilizadas
 
 Python
@@ -116,6 +124,7 @@ JSON
 
 MITRE ATT&CK Framework
 
+
 💼 Casos de Uso
 
 Ambientes de treinamento para SOC
@@ -127,6 +136,7 @@ Demonstração de conceitos de SOAR
 Análise de segurança assistida por IA
 
 Laboratórios educacionais de cibersegurança
+
 
 🧩 Habilidades Demonstradas
 
@@ -144,16 +154,20 @@ Análise de Ameaças
 
 Arquitetura pronta para Cloud
 
+
 🎯 Framework MITRE ATT&CK
 
 Este projeto é baseado no framework MITRE ATT&CK, uma base de conhecimento global de táticas e técnicas utilizadas por adversários reais, construída a partir de observações do mundo real.
 
 Framework mantido pela MITRE Corporation — referência internacional em pesquisa e desenvolvimento em segurança cibernética.
 
+
 ⚙️ Instalação
+
 1️⃣ Clonar o repositório
 git clone https://github.com/Paula-Tech007/mitre-attack-simulation-ai-lab.git
 cd mitre-attack-simulation-ai-lab
+
 2️⃣ Criar ambiente virtual
 python -m venv venv
 
@@ -164,8 +178,10 @@ venv\Scripts\activate
 Linux/macOS:
 
 source venv/bin/activate
+
 3️⃣ Instalar dependências
 pip install -r requirements.txt
+
 4️⃣ Configurar variáveis de ambiente
 
 Crie um arquivo .env:
@@ -207,6 +223,7 @@ Exemplo de body:
   "severity": "High",
   "country": "Brazil"
 }
+
 🔐 Segurança
 
 Chaves de API armazenadas em variáveis de ambiente
@@ -216,6 +233,7 @@ Código preparado para deploy seguro
 Separação entre simulação e análise
 
 Estrutura compatível com ambientes cloud
+
 
 🚀 Possíveis Expansões
 
@@ -231,6 +249,7 @@ Deploy em Cloud (AWS / Azure / GCP)
 
 Monitoramento contínuo
 
+
 🎓 Objetivo Educacional
 
 Este laboratório foi desenvolvido para:
@@ -242,6 +261,7 @@ Demonstração de habilidades em cibersegurança
 Portfólio técnico
 
 Testes de automação e IA aplicada à segurança
+
 
 👩‍💻 Autora
 
