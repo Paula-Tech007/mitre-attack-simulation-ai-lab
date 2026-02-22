@@ -7,96 +7,220 @@
 
 ## 🧠 Arquitetura do Laboratório
 
-O laboratório foi projetado para simular um ambiente corporativo real, permitindo a execução controlada de técnicas adversárias baseadas no framework MITRE ATT&CK.
+Laboratório prático de Segurança Cibernética que simula um ambiente moderno de SOC (Security Operations Center) utilizando Inteligência Artificial, automação e análise baseada no framework MITRE ATT&CK.
 
-### Componentes principais
-
-- 🖥️ Máquina atacante (Kali Linux)
-- 🖥️ Máquina alvo (Windows / Linux)
-- 🤖 Módulo de automação com IA
-- 📊 Sistema de coleta de logs
-- 🧠 Mapeamento para MITRE ATT&CK
+O projeto demonstra como sistemas modernos podem detectar, analisar e responder automaticamente a incidentes — conceito fundamental em plataformas SOAR.
 
 ---
 
-## ⚙️ Funcionalidades
+## 🎯 Objetivo
 
-✔️ Simulação de técnicas reais de ataque  
-✔️ Automação de cenários com IA  
-✔️ Geração de logs para análise defensiva  
-✔️ Mapeamento automático para MITRE ATT&CK  
-✔️ Ambiente seguro para estudos e testes  
+Construir um pipeline automatizado capaz de:
+
+- Simular ataques cibernéticos realistas
+- Classificar eventos de segurança
+- Analisar riscos com IA
+- Gerar recomendações de mitigação
+- Orquestrar respostas automatizadas
+- Demonstrar conceitos de SOC e SOAR
 
 ---
 
-## 🚀 Como executar o laboratório
+## 💼 Casos de Uso
+
+- Ambientes de treinamento SOC
+- Simulações de resposta a incidentes
+- Demonstração de conceitos SOAR
+- Análise de segurança assistida por IA
+- Laboratórios educacionais de cibersegurança
+
+---
+
+## 🧩 Habilidades Demonstradas
+
+- Automação de resposta a incidentes
+- Design de workflows SOC
+- Desenvolvimento de APIs
+- Simulação de eventos de segurança
+- Integração com IA generativa
+- Análise de ameaças
+- Arquitetura pronta para cloud
+
+---
+
+## 🧠 Arquitetura do Sistema
+
+O laboratório é composto por três camadas principais:
+
+### ⚡ API de Simulação e Análise (Flask)
+
+- Simulação de ataques baseados no MITRE ATT&CK
+- Geração de eventos estruturados
+- Envio para análise por IA
+- Retorno de relatórios estilo analista SOC
+
+### 🔄 Motor de Automação (n8n)
+
+- Recebimento de eventos via Webhook
+- Processamento do incidente
+- Integração com a API de análise
+- Geração de respostas automatizadas
+
+### 🤖 Inteligência Artificial (Gemini)
+
+- Avaliação de risco
+- Impacto no negócio
+- Recomendações de mitigação
+- Sugestões de melhoria de detecção
+
+---
+
+## 🧩 Fluxo do Sistema
+
+1. Um ataque é simulado via API  
+2. Um evento estruturado é gerado  
+3. O evento é enviado ao workflow do n8n  
+4. A IA analisa o incidente  
+5. O sistema retorna recomendações  
+
+---
+
+## 🟢 Status da API
+
+Endpoint raiz usado como verificação de funcionamento (health check):
+
+![API Status](images/api-status.png)
+
+---
+
+## 🧪 Demonstração
+
+### 🧠 Workflow Automatizado (n8n)
+
+![Workflow](images/workflow.png)
+
+### ⚡ Teste da API — Simulação de Ataque
+
+![API Test](images/api-test.png)
+
+---
+
+## 🧨 Técnicas MITRE ATT&CK Simuladas
+
+| Ataque      | Técnica | Descrição                 | Severidade |
+|------------|----------|---------------------------|------------|
+| Phishing   | T1566    | Phishing                  | High       |
+| Ransomware | T1486    | Data Encrypted for Impact | Critical   |
+| Brute Force| T1110    | Brute Force               | Medium     |
+
+Framework mantido pela MITRE Corporation.
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+- Python
+- Flask
+- n8n (Automação / SOAR)
+- Google Gemini API
+- Docker (opcional)
+- Thunder Client / Postman
+- JSON
+- MITRE ATT&CK
+
+---
+
+## ⚙️ Instalação
 
 ### 1️⃣ Clonar o repositório
 
 ```bash
 git clone https://github.com/Paula-Tech007/mitre-attack-simulation-ai-lab.git
 cd mitre-attack-simulation-ai-lab
-2️⃣ Configurar o ambiente
+2️⃣ Criar ambiente virtual
+python -m venv venv
 
-Certifique-se de ter instalado:
+Windows:
 
-Docker
+venv\Scripts\activate
 
-Docker Compose
+Linux/macOS:
 
-Python 3.10+
+source venv/bin/activate
+3️⃣ Instalar dependências
+pip install -r requirements.txt
+4️⃣ Configurar variáveis de ambiente
 
-Git
+Crie um arquivo .env:
 
-3️⃣ Iniciar os serviços
-docker compose up -d
-📊 Técnicas MITRE ATT&CK simuladas
+GEMINI_API_KEY=SUA_CHAVE_AQUI
 
-Algumas técnicas contempladas neste laboratório:
+⚠️ Nunca publique sua chave no GitHub.
 
-T1059 — Command and Scripting Interpreter
+▶️ Execução
+python app.py
 
-T1003 — OS Credential Dumping
+Servidor disponível em:
 
-T1047 — Windows Management Instrumentation
+http://127.0.0.1:5000
+📡 Endpoints
+🧨 Simular ataque
 
-T1082 — System Information Discovery
+POST /simulate
 
-T1027 — Obfuscated Files or Information
+{
+  "attack_type": "phishing"
+}
+🤖 Analisar incidente com IA
 
-🧑‍💻 Casos de uso
+POST /analyze
 
-Este laboratório pode ser utilizado para:
+{
+  "attack_type": "phishing",
+  "mitre_technique": "T1566",
+  "severity": "High",
+  "country": "Brazil"
+}
+🔐 Segurança
 
-🔹 Treinamento de Blue Team
-🔹 Exercícios de Red Team / Purple Team
-🔹 Estudos acadêmicos
-🔹 Testes de ferramentas de segurança
-🔹 Desenvolvimento de detecções
+Chaves armazenadas em variáveis de ambiente
 
-⚠️ Aviso legal
+Estrutura pronta para deploy seguro
 
-Este projeto foi desenvolvido exclusivamente para fins educacionais e de pesquisa em segurança da informação.
+Separação entre simulação e análise
 
-❗ Não utilize este laboratório para atividades ilegais ou não autorizadas.
+Compatível com ambientes cloud
 
+🚀 Possíveis Expansões
 
+Integração com SIEM (Splunk, ELK)
 
-⭐ Contribuição
+Integração com plataformas SOAR
 
-Contribuições são bem-vindas!
+Alertas via Slack ou Email
 
-Faça um fork do projeto
+Dashboard de incidentes
 
-Crie uma branch para sua melhoria
+Deploy em AWS / Azure / GCP
 
-Envie um pull request
+Monitoramento contínuo
 
+🎓 Objetivo Educacional
+
+Projeto desenvolvido para:
+
+Estudo prático de SOC
+
+Demonstração de habilidades em cibersegurança
+
+Portfólio técnico
+
+Testes de automação e IA aplicada à segurança
 
 👩‍💻 Autora
 
 Paula Sabino
-Cibersegurança • Automação • Engenharia de IA
+Cybersecurity • Automation • AI Engineering
 
 GitHub: https://github.com/Paula-Tech007
 
