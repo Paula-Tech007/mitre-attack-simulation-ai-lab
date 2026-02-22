@@ -110,7 +110,6 @@ Endpoint raiz usado como verificação de funcionamento (health check):
 ### 🟢 Status da API (Servidor Rodando)
 
 ![API Status](docs/api-status.png)
-
 ---
 
 ## 🧨 Técnicas MITRE ATT&CK Simuladas
