@@ -4,6 +4,7 @@
 ![n8n](https://img.shields.io/badge/n8n-Automation-orange)
 ![MITRE ATT&CK](https://img.shields.io/badge/MITRE-ATT%26CK-red)
 ![License](https://img.shields.io/badge/License-Educational-green)
+
 Laboratório prático de Segurança Cibernética que simula um ambiente moderno de SOC (Security Operations Center) utilizando Inteligência Artificial, automação e análise baseada no framework MITRE ATT&CK.
 
 Este projeto demonstra como um sistema real pode detectar, analisar e responder automaticamente a incidentes de segurança — conceito fundamental em plataformas SOAR modernas.
