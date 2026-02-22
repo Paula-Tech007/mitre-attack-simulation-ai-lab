@@ -83,33 +83,8 @@ O laboratório é composto por três camadas principais:
 4. A IA analisa o incidente  
 5. O sistema retorna recomendações  
 
----
 
-## 🟢 Status da API
 
-Endpoint raiz usado como verificação de funcionamento (health check):
-
-![API Status](images/api-status.png)
-
----
-
-## 🧪 Demonstração
-
-### 🧠 Workflow Automatizado (n8n)
-
-![Workflow n8n](docs/fluxo-n8n.png)
-
----
-
-### ⚡ Teste da API — Simulação de Ataque
-
-![Teste da API](docs/api-test-thunder.png)
-
----
-
-### 🟢 Status da API (Servidor Rodando)
-
-![API Status](docs/api-status.png)
 ---
 
 ## 🧨 Técnicas MITRE ATT&CK Simuladas
