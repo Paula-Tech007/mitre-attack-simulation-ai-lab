@@ -97,11 +97,19 @@ Endpoint raiz usado como verificação de funcionamento (health check):
 
 ### 🧠 Workflow Automatizado (n8n)
 
-![Workflow](images/workflow.png)
+![Workflow n8n](docs/fluxo-n8n.png)
+
+---
 
 ### ⚡ Teste da API — Simulação de Ataque
 
-![API Test](images/api-test.png)
+![Teste da API](docs/api-test-thunder.png)
+
+---
+
+### 🟢 Status da API (Servidor Rodando)
+
+![API Status](docs/api-status.png)
 
 ---
 
