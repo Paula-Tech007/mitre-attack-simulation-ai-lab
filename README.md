@@ -1,4 +1,4 @@
-# 🛡️ AI SOC — Incident Response Lab
+# 🛡️ AI-Powered SOC Incident Response Lab — MITRE ATT&CK Simulation
 ![Python](https://img.shields.io/badge/Python-3.x-blue)
 ![Flask](https://img.shields.io/badge/Flask-API-black)
 ![n8n](https://img.shields.io/badge/n8n-Automation-orange)
@@ -9,263 +9,247 @@ Laboratório prático de Segurança Cibernética que simula um ambiente moderno 
 
 Este projeto demonstra como um sistema real pode detectar, analisar e responder automaticamente a incidentes de segurança — conceito fundamental em plataformas SOAR modernas.
 
----
-
-## 🎯 Objetivo
+🎯 Objetivo
 
 Construir um pipeline automatizado de resposta a incidentes capaz de:
 
-* Simular ataques cibernéticos realistas
-* Classificar eventos de segurança
-* Analisar riscos utilizando IA
-* Gerar recomendações de mitigação
-* Orquestrar respostas automatizadas
-* Demonstrar conceitos de SOC e SOAR
+Simular ataques cibernéticos realistas
 
----
+Classificar eventos de segurança
 
-## 🧠 Arquitetura do Sistema
+Analisar riscos utilizando IA
+
+Gerar recomendações de mitigação
+
+Orquestrar respostas automatizadas
+
+Demonstrar conceitos de SOC e SOAR
+
+🧠 Arquitetura do Sistema
 
 O laboratório é composto por três camadas principais:
 
-### ⚡ API de Simulação e Análise (Flask)
+⚡ API de Simulação e Análise (Flask)
 
 Responsável por:
 
-* Simular ataques baseados no MITRE ATT&CK
-* Gerar eventos de segurança estruturados
-* Enviar dados para análise por IA
-* Retornar relatórios estilo analista SOC
+Simular ataques baseados no MITRE ATT&CK
 
----
+Gerar eventos de segurança estruturados
 
-### 🔄 Motor de Automação (n8n)
+Enviar dados para análise por IA
+
+Retornar relatórios estilo analista SOC
+
+🔄 Motor de Automação (n8n)
 
 Pipeline automatizado responsável por:
 
-* Receber eventos via Webhook
-* Processar dados do incidente
-* Integrar com a API de análise
-* Gerar respostas automatizadas
+Receber eventos via Webhook
 
----
+Processar dados do incidente
 
-### 🤖 Inteligência Artificial (Gemini)
+Integrar com a API de análise
+
+Gerar respostas automatizadas
+
+🤖 Inteligência Artificial (Gemini)
 
 Utilizada para:
 
-* Avaliação de risco
-* Impacto no negócio
-* Recomendações de mitigação
-* Sugestões de melhoria de detecção
+Avaliação de risco
 
----
+Impacto no negócio
 
-## 🧩 Fluxo do Sistema
+Recomendações de mitigação
 
-1. Um ataque é simulado via API
-2. Um evento estruturado é gerado
-3. O evento é enviado ao workflow do n8n
-4. A IA analisa o incidente
-5. O sistema retorna recomendações de resposta
+Sugestões de melhoria de detecção
 
----
+🧩 Fluxo do Sistema
 
-## 🟢 Status da API
+Um ataque é simulado via API
+
+Um evento estruturado é gerado
+
+O evento é enviado ao workflow do n8n
+
+A IA analisa o incidente
+
+O sistema retorna recomendações de resposta
+
+🟢 Status da API
 
 Endpoint raiz utilizado como verificação de funcionamento (health check):
 
-![API Status](images/api-status.png)
-
 Exemplo de resposta:
 
-```json
 {
   "project": "Cyber Attack Simulation Lab",
   "status": "running",
   "version": "2.0 SOC Edition"
 }
-```
+🧪 Demonstração do Workflow
+🧠 Pipeline Automatizado (n8n)
 
----
+⚡ Teste da API — Simulação de Ataque
 
-## 🧪 Demonstração do Workflow
+🧨 Técnicas MITRE ATT&CK Simuladas
+Ataque	Técnica	Descrição	Severidade
+Phishing	T1566	Phishing	High
+Ransomware	T1486	Data Encrypted for Impact	Critical
+Brute Force	T1110	Brute Force	Medium
+🛠️ Tecnologias Utilizadas
 
-### 🧠 Pipeline Automatizado (n8n)
+Python
 
-![Workflow](images/workflow.png)
+Flask
 
----
+n8n (Automação / SOAR)
 
-### ⚡ Teste da API — Simulação de Ataque
+Google Gemini API
 
-![API Test](images/api-test.png)
+Docker (opcional)
 
----
+Thunder Client / Postman
 
-## 🧨 Técnicas MITRE ATT&CK Simuladas
+JSON
 
-| Ataque      | Técnica | Descrição                 | Severidade |
-| ----------- | ------- | ------------------------- | ---------- |
-| Phishing    | T1566   | Phishing                  | High       |
-| Ransomware  | T1486   | Data Encrypted for Impact | Critical   |
-| Brute Force | T1110   | Brute Force               | Medium     |
+MITRE ATT&CK Framework
 
----
+💼 Casos de Uso
 
-## 🛠️ Tecnologias Utilizadas
+Ambientes de treinamento para SOC
 
-* Python
-* Flask
-* n8n (Automação / SOAR)
-* Google Gemini API
-* Docker (opcional)
-* Thunder Client / Postman
-* JSON
-* MITRE ATT&CK Framework
+Simulações de resposta a incidentes
 
----
+Demonstração de conceitos de SOAR
 
-## ⚙️ Instalação
+Análise de segurança assistida por IA
 
-### 1️⃣ Clonar o repositório
+Laboratórios educacionais de cibersegurança
 
-```bash
-git clone https://github.com/seu-usuario/ai-soc-lab.git
-cd ai-soc-lab
-```
+🧩 Habilidades Demonstradas
 
----
+Automação de Resposta a Incidentes
 
-### 2️⃣ Criar ambiente virtual
+Design de Workflows de SOC
 
-```bash
+Desenvolvimento de APIs
+
+Simulação de Eventos de Segurança
+
+Integração com Inteligência Artificial
+
+Análise de Ameaças
+
+Arquitetura pronta para Cloud
+
+🎯 Framework MITRE ATT&CK
+
+Este projeto é baseado no framework MITRE ATT&CK, uma base de conhecimento global de táticas e técnicas utilizadas por adversários reais, construída a partir de observações do mundo real.
+
+Framework mantido pela MITRE Corporation — referência internacional em pesquisa e desenvolvimento em segurança cibernética.
+
+⚙️ Instalação
+1️⃣ Clonar o repositório
+git clone https://github.com/Paula-Tech007/mitre-attack-simulation-ai-lab.git
+cd mitre-attack-simulation-ai-lab
+2️⃣ Criar ambiente virtual
 python -m venv venv
-```
 
 Windows:
 
-```bash
 venv\Scripts\activate
-```
 
 Linux/macOS:
 
-```bash
 source venv/bin/activate
-```
-
----
-
-### 3️⃣ Instalar dependências
-
-```bash
+3️⃣ Instalar dependências
 pip install -r requirements.txt
-```
+4️⃣ Configurar variáveis de ambiente
 
----
+Crie um arquivo .env:
 
-### 4️⃣ Configurar variáveis de ambiente
-
-Crie um arquivo `.env`:
-
-```
 GEMINI_API_KEY=SUA_CHAVE_AQUI
-```
 
 ⚠️ Nunca publique sua chave no GitHub.
 
-Recomenda-se incluir um arquivo `.env.example` no repositório.
+Recomenda-se incluir um arquivo .env.example no repositório.
 
----
-
-## ▶️ Execução
+▶️ Execução
 
 Inicie a API:
 
-```bash
 python app.py
-```
 
 Servidor disponível em:
 
-```
 http://127.0.0.1:5000
-```
+📡 Endpoints
+🧨 Simular ataque
 
----
-
-## 📡 Endpoints
-
-### 🧨 Simular ataque
-
-**POST** `/simulate`
+POST /simulate
 
 Exemplo de body:
 
-```json
 {
   "attack_type": "phishing"
 }
-```
+🤖 Analisar incidente com IA
 
----
-
-### 🤖 Analisar incidente com IA
-
-**POST** `/analyze`
+POST /analyze
 
 Exemplo de body:
 
-```json
 {
   "attack_type": "phishing",
   "mitre_technique": "T1566",
   "severity": "High",
   "country": "Brazil"
 }
-```
+🔐 Segurança
 
----
+Chaves de API armazenadas em variáveis de ambiente
 
-## 🔐 Segurança
+Código preparado para deploy seguro
 
-* Chaves de API armazenadas em variáveis de ambiente
-* Código preparado para deploy seguro
-* Separação entre simulação e análise
-* Estrutura compatível com ambientes cloud
+Separação entre simulação e análise
 
----
+Estrutura compatível com ambientes cloud
 
-## 🚀 Possíveis Expansões
+🚀 Possíveis Expansões
 
-* Integração com SIEM (Splunk, ELK)
-* Integração com plataformas SOAR
-* Alertas via Slack ou Email
-* Dashboard de incidentes
-* Deploy em Cloud (AWS / Azure / GCP)
-* Monitoramento contínuo
+Integração com SIEM (Splunk, ELK)
 
----
+Integração com plataformas SOAR
 
-## 🎓 Objetivo Educacional
+Alertas via Slack ou Email
+
+Dashboard de incidentes
+
+Deploy em Cloud (AWS / Azure / GCP)
+
+Monitoramento contínuo
+
+🎓 Objetivo Educacional
 
 Este laboratório foi desenvolvido para:
 
-* Estudo prático de SOC
-* Demonstração de habilidades em cibersegurança
-* Portfólio técnico
-* Testes de automação e IA aplicada à segurança
+Estudo prático de SOC
 
----
+Demonstração de habilidades em cibersegurança
 
-## 👩‍💻 Autora
+Portfólio técnico
+
+Testes de automação e IA aplicada à segurança
+
+👩‍💻 Autora
 
 Paula Sabino
-Foco em Automação, Cibersegurança e Inteligência Artificial aplicada.
+Cibersegurança • Automação • Engenharia de IA
 
----
+GitHub: https://github.com/Paula-Tech007
 
-## 📄 Licença
+📄 Licença
 
 Uso educacional e de pesquisa.
